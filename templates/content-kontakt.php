@@ -19,7 +19,7 @@
       $location = get_field('map');
       if( ! empty($location) ){
       ?>
-      <div id="map" style="width: 100%; height: 250px;"></div>
+      <div id="map" style="width: 40%; height: 250px;"></div>
       <script src='http://maps.googleapis.com/maps/api/js?sensor=false' type='text/javascript'></script>
 
       <script type="text/javascript">

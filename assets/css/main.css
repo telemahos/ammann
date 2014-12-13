@@ -6909,11 +6909,11 @@ header {
 }
 #about {
   min-height: 100%;
-  padding: 5px;
-  border: 20px solid orange;
-  border-bottom-color: #E5007C;
-  border-left-color: #E3D900;
-  border-right-color: #009EE2;
+  padding: 5px 5px 30px;
+  border: 20px double #FFFFFF;
+  -webkit-border-image: url("../img/lizAmmann.png") 25 30 10 20 repeat;
+  -o-border-image: url("../img/lizAmmann.png") 25 30 10 20 repeat;
+     border-image: url("../img/lizAmmann.png") 25 30 10 20 repeat;
   font-family: DINWeb, sans-serif;
 }
 #about span.brand-liz {
@@ -6923,10 +6923,11 @@ header {
   margin-top: 50px;
 }
 .cv p {
-  font-family: DINWeb, sans-serif, Arial;
+  font-family: DINWeb-Light, sans-serif, Arial;
   font-size: 24px;
   color: #6D6D6C;
   margin-top: -15px;
+  font-weight: lighter;
 }
 .kundenStatement {
   color: #000;
@@ -6938,11 +6939,18 @@ header {
 #kontakt {
   min-height: 100%;
   padding: 5px;
-  border: 20px solid orange;
-  border-bottom-color: #E5007C;
-  border-left-color: #E3D900;
-  border-right-color: #009EE2;
-  font-family: DINWeb, sans-serif;
+  border: 20px double #FFFFFF;
+  -webkit-border-image: url("../img/lizAmmann.png") 25 30 10 20 repeat;
+  -o-border-image: url("../img/lizAmmann.png") 25 30 10 20 repeat;
+     border-image: url("../img/lizAmmann.png") 25 30 10 20 repeat;
+  font-family: DINWeb, sans-serif, Arial;
+  font-weight: lighter;
+}
+#kontakt p > strong {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #555555;
 }
 #kontakt_page {
   margin-top: 50px;
@@ -6951,6 +6959,10 @@ header {
 .instructions p,
 .address p {
   font-size: 24px;
-  color: #6D6D6C;
+  color: #555555;
+}
+.address a {
+  color: #E5007C;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
