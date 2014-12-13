@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="about">
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
       <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?>
@@ -12,9 +12,10 @@
   ?>
   <div class="wrap container" role="document">
     <div class="content row">
-      <main class="main" role="main">
-        <?php include roots_template_path(); ?>
-      </main><!-- /.main -->
+      <?php include roots_template_path(); ?>
+      <!-- <main class="main" role="main">
+        
+      </main> <!-- /.main -->
       <?php //if (roots_display_sidebar()) : ?>
         <!-- <aside class="sidebar" role="complementary"> -->
           <?php //include roots_sidebar_path(); ?>

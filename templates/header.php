@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a> -->
-      <a class="navbar-brand text-right" href="<?php echo esc_url(home_url('/')); ?>">
+      <a id="brand" class="navbar-brand text-right" href="<?php echo esc_url(home_url('/')); ?>">
         <span class="brand-liz">LIZ AMMANN</span><br/><span class="brand-grafik">GRAFIK</span><br /><span class="brand-interaction">INTERACTION</span><br /><span class="brand-design">DESIGN</span></a>
     </div>
 

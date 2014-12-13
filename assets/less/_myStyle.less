@@ -1,23 +1,37 @@
+/* first assign web font file */
+@font-face {
+  font-family: DINWeb-Black;
+  src: url("DINWeb-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Light;
+  src: url("DINWeb-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  src: url("DINWeb.woff") format("woff");
+}
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 html,body {
 	margin:0;
 	padding:0;
-	height:100%; /* needed for container min-height */
-}
-body {
-	// margin-top: 10px;
-	border-top: 20px solid rgba(229, 0, 124, 0.9);
-	border-left: 20px solid rgba(227, 217, 0, 0.9); 
-	border-right: 20px solid rgba(0, 158, 226, 0.9);
-	border-bottom: 20px solid rgba(229, 0, 124, 0.9);
+	font-family: DINWeb-Light, sans-serif;
 }
 .container {
 	position:relative; /* needed for footer positioning*/
 	height:auto !important; /* real browsers */
 	min-height:100%; /* real browsers */
 }
-// .nav > li > a {
-//     padding:5px;
-// }
+// #################################################################
+// NAV Links General
+// #################################################################
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #DE0D6E;
     background-color: #F5B4D2;
@@ -27,27 +41,285 @@ body {
     border-color: #FFFFFF;
 }
 .navbar-default .navbar-brand {
-	font-weight: bolder;
+	font-weight: bold;
 	color: #AEB1B2;
+	margin-bottom: 30px;
 	
 }
-	.navbar-brand {
-	    font-size: 22px;
-	    line-height: 25px;
+	.navbar-default .navbar-brand {
+		font-family: DINWeb-Black, sans-serif;
+		font-weight: normal;
+	    font-size: 19px;
+	    line-height: 19px;
 	}
+	.navbar-default .navbar-brand:hover {
+	    color: #AEB1B2;
+	}
+.navbar-nav > li > a {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	line-height: 18px;
+	margin-top: 12px;
+	padding-left: 5px;
+	padding-right: 2px;
+	margin-right: 25px;
+}
 .navbar-default .navbar-nav > li > a {
+	font-family: DINWeb, sans-serif;
     color: #BABABA;
     font-size: 18px;
-    padding-top: 30px;
+    // padding-top: 30px;
 }
+header {
+	margin-bottom: 90px;
+}
+
+// #################################################################
+// NAV Links Colors on Hover
+// #################################################################
+// General
+.menu-kontakt,
+.menu-kundenliste {
+    margin-right: 20px;
+    margin-left: -15px;
+}
+.menu-angebot {
+	margin-left: -15px;
+}
+.navbar-default .navbar-nav > .active > a {
+	// color: transparent;
+	// background-color: transparent;
+}
+// Home
+.navbar-default .navbar-nav > li.menu-uber-mich > a:hover,
+.navbar-default .navbar-nav > li.menu-kontakt > a:hover {
+	color: #E5007C; 
+}
+// .navbar-default .navbar-nav > li.active .menu-uber-mich > a:active,
+// .navbar-default .navbar-nav > li.active .menu-kontakt > a:active,
+// .navbar-default .navbar-nav > li.active .menu-uber-mich > a:focus,
+// .navbar-default .navbar-nav > li.active .menu-kontakt > a:focus  {
+// 	background: #F5B4D2;
+// 	color: #E5007C; 
+// }
+// Grafik
+.navbar-default .navbar-nav > li.menu-arbeiten > a:hover,
+.navbar-default .navbar-nav > li.menu-kundenliste > a:hover {
+	color: #009EE2;
+}
+// .navbar-default .navbar-nav > li.active .menu-arbeiten > a:active,
+// .navbar-default .navbar-nav > li.active .menu-kundenliste > a:active,
+// .navbar-default .navbar-nav > li.active .menu-arbeiten > a:focus,
+// .navbar-default .navbar-nav > li.active .menu-kundenliste > a:focus {
+// 	background: #A0D9F7;
+// 	color: #E5007C; 
+// }
+// Interactive Design
+.navbar-default .navbar-nav > li.menu-bedarf > a:hover,
+.navbar-default .navbar-nav > li.menu-angebot > a:hover {
+	color: #E3D900;
+}
+// .navbar-default .navbar-nav > li.active .menu-bedarf > a:active,
+// .navbar-default .navbar-nav > li.active .menu-angebot > a:active,
+// .navbar-default .navbar-nav > li.active .menu-bedarf > a:focus,
+// .navbar-default .navbar-nav > li.active .menu-angebot > a:focus {
+// 	background: #EFE77F;
+// 	color: #E5007C; 
+// }
 
 // #################################################################
 // Starter Page
 // #################################################################
-#start_page h1{
-	text-align: right;
-	font-size: 165px;
-	line-height: 144px;
-	color: #B1B1B2;
-	font-weight: bolder;
+#startPage {
+	min-height: 100%;
+	padding: 5px;
+	border: 20px double orange;
+	-moz-border-image:url("../img/startPage.png") 25 30 10 20 repeat;
+	-webkit-border-image:url("../img/startPage.png") 25 30 10 20 repeat;
+	border-image:url("../img/startPage.png") 25 30 10 20 repeat;
+	// border-image-width: 100%;
+	font-family: DINWeb, sans-serif;
 }
+#start_page h1 {
+	font-family: DINWeb-Black, sans-serif;
+	letter-spacing: 12px;
+	text-align: right;
+	font-size: 147px;
+	line-height: 124px;
+	// font-weight: bolder;
+	color: #B1B1B2;
+}
+#startPage span.brand-liz {
+	color: #E5007C;
+}
+#startPage h1#ammann:hover {
+	color: #E5007C;
+	text-decoration: none;
+	cursor: pointer;
+}
+#startPage h1#grafik:hover {
+	color: #009EE2;
+	text-decoration: none;
+	cursor: pointer;
+}
+#startPage h1#intDesign:hover {
+	color: #E3D900;
+	text-decoration: none;
+	cursor: pointer;
+}
+#startPageContent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 40px 50px;
+	width: 100%;
+	min-height: 100%;
+	background: rgba(255,238,5,0.92);
+	font-size: 22px;
+}
+#closeBtn {
+	font-family: Arial, DINWeb, sans-serif;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #9B9C9C;
+	color: #FFFFFF;
+	padding: 5px 15px;
+	font-weight: lighter;
+	font-size: 26px;
+}
+ 	#closeBtn:hover {
+ 		cursor: pointer;
+ 	}
+ /* Overlay style */
+ #overlayTop {
+	display: none;
+}
+ .overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: -1500px;
+	left: 0;
+	bottom: 0;
+	background: #E5007C;
+	z-index: 1000;
+}
+.overlay-close-top{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #E5007C;
+	z-index: 1000;
+}
+
+#overlayRight {
+	display: none;
+}
+.overlay-right {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 2000px;
+	background: #009EE2;
+	z-index: 1000;
+}
+.overlay-close-right{
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom:0;
+	background: #009EE2;
+	z-index: 1000;
+}
+
+#overlayLeft {
+	display: none;
+}
+.overlay-left {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -2000px;
+	// bottom: 0;
+	background: #E3D900;
+	z-index: 1000;
+}
+.overlay-close-left{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	// top: 0;
+	left: 0;
+	bottom:0;
+	background: #E3D900;
+	z-index: 1000;
+}
+// #################################################################
+// UBER MICH Page
+// #################################################################
+#about {
+	min-height: 100%;
+	padding: 5px;
+	border: 20px solid orange;
+	border-bottom-color: #E5007C;
+	border-left-color: #E3D900;
+	border-right-color: #009EE2;
+	// border: 20px double orange;
+	// -moz-border-image:url("../img/lizAmmann.png") 25 30 10 20 repeat;
+	// -webkit-border-image:url("../img/lizAmmann.png") 25 30 10 20 repeat;
+	// border-image:url("../img/lizAmmann.png") 25 30 10 20 repeat;
+	font-family: DINWeb, sans-serif;
+}
+#about span.brand-liz {
+	color: #E5007C;
+}
+#lizAmmann_page {
+	margin-top: 50px;
+}
+.cv p{
+	font-family:  DINWeb, sans-serif, Arial;
+	font-size: 24px;
+	color: #6D6D6C;
+	margin-top: -15px;
+}
+.kundenStatement {
+	color: #000;
+	font-size: 21px;
+	margin-left: -30px;
+	margin-top: -12px;
+	line-height: 1.6em;
+}
+// #################################################################
+// KONTAKT Page
+// #################################################################
+#kontakt {
+	min-height: 100%;
+	padding: 5px;
+	border: 20px solid orange;
+	border-bottom-color: #E5007C;
+	border-left-color: #E3D900;
+	border-right-color: #009EE2;
+	// border: 20px double orange;
+	// -moz-border-image:url("../img/lizAmmann.png") 25 30 10 20 repeat;
+	// -webkit-border-image:url("../img/lizAmmann.png") 25 30 10 20 repeat;
+	// border-image:url("../img/lizAmmann.png") 25 30 10 20 repeat;
+	font-family: DINWeb, sans-serif;
+}
+#kontakt_page {
+	margin-top: 50px;
+}
+.kontakt_message p,
+.instructions p,
+.address p {
+	font-size: 24px;
+	color: #6D6D6C;
+}
+
